@@ -3,7 +3,7 @@ import { Edit, SimpleForm, TextInput, BooleanInput, DateInput } from 'react-admi
 
 import UsersTitle from './users-title';
 
-export const UserEdit = props => (
+export const UsersEdit = props => (
     <Edit title={<UsersTitle />} {...props}>
         <SimpleForm>
             <TextInput source="firstName" />

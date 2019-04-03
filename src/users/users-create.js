@@ -1,7 +1,7 @@
 import React from 'react';
 import { Create, SimpleForm, TextInput, BooleanInput } from 'react-admin';
 
-export const UserCreate = props => (
+export const UsersCreate = props => (
     <Create {...props}>
         <SimpleForm>
             <TextInput source="email" />
