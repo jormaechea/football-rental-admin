@@ -29,6 +29,11 @@ import { SchedulesList } from './schedules/schedules-list';
 import { SchedulesEdit } from './schedules/schedules-edit';
 import { SchedulesCreate } from './schedules/schedules-create';
 
+import CustomersIcon from '@material-ui/icons/Person';
+import { CustomersList } from './customers/customers-list';
+import { CustomersEdit } from './customers/customers-edit';
+import { CustomersCreate } from './customers/customers-create';
+
 // const dataProvider = jsonServerProvider('http://jsonplaceholder.typicode.com');
 const dataProvider = jsonServerProvider('http://localhost:4000/api');
 
@@ -43,6 +48,7 @@ const App = () => (
 		<Resource name="fields" icon={FieldsIcon} list={FieldsList} edit={FieldsEdit} create={FieldsCreate} />
 		<Resource name="prices" icon={PricesIcon} list={PricesList} edit={PricesEdit} create={PricesCreate} />
 		<Resource name="schedules" icon={SchedulesIcon} list={SchedulesList} edit={SchedulesEdit} create={SchedulesCreate} />
+		<Resource name="customers" icon={CustomersIcon} list={CustomersList} edit={CustomersEdit} create={CustomersCreate} />
 	</Admin>
 );
 
