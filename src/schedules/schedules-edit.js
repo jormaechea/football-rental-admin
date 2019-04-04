@@ -4,8 +4,6 @@ import { Edit, SimpleForm, TextInput, SelectInput } from 'react-admin';
 
 import { optionsForSelect } from '../days-of-week';
 
-console.log(optionsForSelect);
-
 export const SchedulesEdit = props => (
     <Edit {...props}>
         <SimpleForm>
