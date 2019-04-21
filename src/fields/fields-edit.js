@@ -5,10 +5,10 @@ import FieldsTitle from './fields-title';
 import { optionsForSelect } from '../fields-sizes';
 
 export const FieldsEdit = props => (
-    <Edit title={<FieldsTitle />} {...props}>
-        <SimpleForm>
-            <TextInput source="name" />
-            <SelectInput source="size" choices={optionsForSelect} />
-        </SimpleForm>
-    </Edit>
+	<Edit title={<FieldsTitle />} {...props}>
+		<SimpleForm>
+			<TextInput source="name" />
+			<SelectInput source="size" choices={optionsForSelect} />
+		</SimpleForm>
+	</Edit>
 );

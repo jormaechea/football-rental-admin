@@ -5,7 +5,7 @@ export const PricesList = props => (
 	<List {...props}>
 		<Datagrid rowClick="edit">
 			<TextField source="name" />
-         <NumberField source="value" options={{ maximumFractionDigits: 2, style: 'currency', currency: 'ARS' }} />
+			<NumberField source="value" options={{ maximumFractionDigits: 2, style: 'currency', currency: 'ARS' }} />
 		</Datagrid>
 	</List>
 );
