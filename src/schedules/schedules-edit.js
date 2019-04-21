@@ -1,17 +1,15 @@
 import React from 'react';
-import { Edit, SimpleForm, TextInput, SelectInput } from 'react-admin';
-// import { TimeInput } from 'react-admin-date-inputs';
+import { Edit, SimpleForm, SelectInput, translate } from 'react-admin';
+import { TimeInput } from 'react-admin-date-inputs';
 
 import { optionsForSelect } from '../days-of-week';
 
-export const SchedulesEdit = props => (
+export const SchedulesEdit = translate(props => (
     <Edit {...props}>
         <SimpleForm>
             <SelectInput source="dayOfWeek" choices={optionsForSelect} />
-            {/*<TimeInput source="startingHour" options={{ format: 'HH:mm' }} />
-            <TimeInput source="endingHour" options={{ format: 'HH:mm' }} />*/}
-            <TextInput source="startingHour" />
-            <TextInput source="endingHour" />
+            <TimeInput source="startingHour" label={props.translate('resources.schedules.fields.startingHour', { _: 'Starting hour'})} options={{ autoOk: true }} />
+            <TimeInput source="endingHour" label={props.translate('resources.schedules.fields.endingHour', { _: 'Ending hour'})} options={{ autoOk: true }} />
       </SimpleForm>
     </Edit>
-);
+));
