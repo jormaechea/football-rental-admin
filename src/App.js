@@ -3,38 +3,17 @@ import { Admin, Resource } from 'react-admin';
 import jsonServerProvider from 'ra-data-json-server';
 import './App.css';
 
-
 import authProvider from './auth';
 import i18nProvider from './i18n/provider';
 
 import homeDashboard from './dashboards/home';
 
-import UserIcon from '@material-ui/icons/People';
-import { UsersList } from './users/users-list';
-import { UsersEdit } from './users/users-edit';
-import { UsersCreate } from './users/users-create';
+import { CustomersIcon, CustomersList, CustomersEdit, CustomersCreate } from './customers';
+import { FieldsIcon,  FieldsList, FieldsEdit, FieldsCreate } from './fields';
+import { PricesIcon, PricesList, PricesEdit, PricesCreate } from './prices';
+import { SchedulesIcon, SchedulesList, SchedulesEdit, SchedulesCreate } from './schedules';
+import { UserIcon, UsersList, UsersEdit, UsersCreate } from './users';
 
-import FieldsIcon from '@material-ui/icons/Crop169';
-import { FieldsList } from './fields/fields-list';
-import { FieldsEdit } from './fields/fields-edit';
-import { FieldsCreate } from './fields/fields-create';
-
-import PricesIcon from '@material-ui/icons/MonetizationOn';
-import { PricesList } from './prices/prices-list';
-import { PricesEdit } from './prices/prices-edit';
-import { PricesCreate } from './prices/prices-create';
-
-import SchedulesIcon from '@material-ui/icons/Schedule';
-import { SchedulesList } from './schedules/schedules-list';
-import { SchedulesEdit } from './schedules/schedules-edit';
-import { SchedulesCreate } from './schedules/schedules-create';
-
-import CustomersIcon from '@material-ui/icons/Person';
-import { CustomersList } from './customers/customers-list';
-import { CustomersEdit } from './customers/customers-edit';
-import { CustomersCreate } from './customers/customers-create';
-
-// const dataProvider = jsonServerProvider('http://jsonplaceholder.typicode.com');
 const dataProvider = jsonServerProvider('http://localhost:4000/api');
 
 const App = () => (
